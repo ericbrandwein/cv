@@ -9,7 +9,7 @@
 \documentclass[11pt,a4paper,sans]{moderncv}        % possible options include font size ('10pt', '11pt' and '12pt'), paper size ('a4paper', 'letterpaper', 'a5paper', 'legalpaper', 'executivepaper' and 'landscape') and font family ('sans' and 'roman')
 
 % moderncv themes
-\moderncvstyle{casual}                             % style options are 'casual' P(default), 'classic', 'oldstyle' and 'banking'
+\moderncvstyle{casual}                             % style options are 'casual' (default), 'classic', 'oldstyle' and 'banking'
 \moderncvcolor{blue}                               % color options 'blue' (default), 'orange', 'green', 'red', 'purple', 'grey' and 'black'
 %\renewcommand{\familydefault}{\sfdefault}         % to set the default font; use '\sfdefault' for the default sans serif font, '\rmdefault' for the default roman one, or any tex font name
 \nopagenumbers{}                                  % uncomment to suppress automatic page numbering for CVs longer than one page
@@ -23,17 +23,20 @@
 %\setlength{\hintscolumnwidth}{3cm}                % if you want to change the width of the column with the dates
 %\setlength{\makecvtitlenamewidth}{10cm}           % for the 'classic' style, if you want to force the width allocated to your name and avoid line breaks. be careful though, the length is normally calculated to avoid any overlap with your personal info; use this at your own typographical risks...
 
+
 % personal data
 \name{Eric}{Brandwein}
-%\title{Software Engineer}                               % optional, remove / comment the line if not wanted
-% \address{Holmberg 788, Boulogne}{1609 Buenos Aires}{Argentina}% optional, remove / comment the line if not wanted; the "postcode city" and and "country" arguments can be omitted or provided empty
+% \title{Científico de la Computación}
+% \null\hfill\small{01-04-1997} \\
+% \null\hfill\small{Italian Argentine}}                               % optional, remove / comment the line if not wanted
+% \address{Virrey Loreto 1799}{1426 Buenos Aires}{Argentina}% optional, remove / comment the line if not wanted; the "postcode city" and and "country" arguments can be omitted or provided empty
 \phone[mobile]{+54~(911)~6120~4615}                   % optional, remove / comment the line if not wanted
 %\phone[fixed]{+2~(345)~678~901}                    % optional, remove / comment the line if not wanted
 %\phone[fax]{+3~(456)~789~012}                      % optional, remove / comment the line if not wanted
-\email{brandweineric@gmail.com}                               % optional, remove / comment the line if not wanted
-% \homepage{http://github.com/ericbrandwein}
+\email{ebrandwein@dc.uba.ar}                               % optional, remove / comment the line if not wanted
+\homepage{ericbrandwein.github.io}                         % optional, remove / comment the line if not wanted
 %\extrainfo{additional information}                 % optional, remove / comment the line if not wanted
-\photo[100pt][0pt]{picture}                       % optional, remove / comment the line if not wanted; '64pt' is the height the picture must be resized to, 0.4pt is the thickness of the frame around it (put it to 0pt for no frame) and 'picture' is the name of the picture file
+% \photo[100pt][0pt]{picture}                       % optional, remove / comment the line if not wanted; '64pt' is the height the picture must be resized to, 0.4pt is the thickness of the frame around it (put it to 0pt for no frame) and 'picture' is the name of the picture file
 %\quote{Some quote}                                 % optional, remove / comment the line if not wanted
 
 % to show numerical labels in the bibliography (default is to show no labels); only useful if you make citations in your resume
@@ -53,109 +56,101 @@
 %-----       resume       ---------------------------------------------------------
 \makecvtitle
 
-% \section{Resumen}
-% \cvitem{}{
-% Estoy programando desde el 2010, y profesionalmente desde el 2015,
-% principalmente desarrollando aplicaciones para Android en Java.
-% Siempre estoy buscando nuevos proyectos Open Source que crear o a
-% los que contribuir, y participando de competencias de algoritmia en la plataforma
-% \textcolor{blue}{\href{https://codeforces.com/profile/berocs}{Codeforces}}.
-% Aprendí por mi cuenta a programar fluidamente en Java, Python, C++, y Android, y tengo conocimiento básico de muchos otros lenguajes y frameworks, incluyendo Node.js, C, Haskell, etc.
-% Aprendo rápido, y empiezo a aportar ideas aún más rápido.
-% }
+\section{Docencia}
+%\subsection{Vocational}
+\cventry{\footnotesize{Agosto 2025 -- Agosto 2026}}{Cargo Equiparado a Jefe de Trabajos Prácticos}{Algoritmos y Estructuras de Datos III, Departamento de Computación, Facultad de Ciencias Exactas y Naturales, UBA}{Buenos Aires}{Argentina}{}
+\cventry{\footnotesize{Marzo 2026 -- Junio 2026}}{Profesor Titular}{Matemática Discreta, Ingeniería en Inteligencia Artificial, Univeridad del CEMA}{Buenos Aires}{Argentina}{}
+\cventry{\footnotesize{Agosto 2024 -- Febrero 2025}}{Jefe de Trabajos Prácticos}{Algoritmos y Estructuras de Datos III, Departamento de Computación, Facultad de Ciencias Exactas y Naturales, UBA}{Buenos Aires}{Argentina}{}
+\cventry{\footnotesize{Agosto 2024 -- Febrero 2025}}{Profesor Asistente}{Algoritmos y Estructura de Datos, Departamento de Ingeniería, Universidad de San Andrés}{Buenos Aires}{Argentina}{}
+\cventry{\footnotesize{Octubre 2023 -- Agosto 2024}}{Ayudante de 1ra}{Algoritmos y Estructuras de Datos III, Departamento de Computación, Facultad de Ciencias Exactas y Naturales, UBA}{Buenos Aires}{Argentina}{}
 
-\section{Experiencia}
+\cventry{\footnotesize{Febrero 2019 -- Febrero 2020}}{Ayudante de 2da}{Algoritmos y Estructuras de Datos I, Departamento de Computación, Facultad de Ciencias Exactas y Naturales, UBA}{Buenos Aires}{Argentina}{}%
 
-\cventry{\footnotesize{Octubre 2023 -- Actualidad}}{Ayudante de 1ra de Algoritmos y Estructuras de Datos III}{Departamento de Computación, Facultad de Ciencias Exactas y Naturales, UBA}{Buenos Aires}{Argentina}{}
-\cventry{\footnotesize{Enero 2022 -- Julio 2022}}{Software Engineer}{Wildlife Studios}{Buenos Aires}{Argentina}{}
+\section{Estudios}
+\cventry{2023 -- 2027 (estimado)}{Doctorado en Ciencias de la Computación}{Universidad de Buenos Aires}{Buenos Aires}{Argentina}{Directores: Flavia Bonomo e Ignasi Sau. Tema: Kernelización en grafos.}  % arguments 3 to 6 can be left empty
+\cventry{2015 -- 2022}{Licenciatura en Ciencias de la Computación}{Universidad de Buenos Aires}{Buenos Aires}{Argentina}{}  % arguments 3 to 6 can be left empty
+\cventry{2010 -- 2014}{Bachiller con orientación en Tecnología de la Información}{ORT}{Buenos Aires}{Argentina}{}
+
+\section{Otra experiencia laboral}
+\cventry{\footnotesize{Enero 2022 -- Julio 2022}}{Ingeniero de Software}{Wildlife Studios}{Buenos Aires}{Argentina}{}
 \cventry{\footnotesize{Agosto 2021 -- Diciembre 2021}}{Software Engineering MTS}{Mulesoft}{Buenos Aires}{Argentina}{}
 \cventry{\footnotesize{Marzo 2021 -- Agosto 2021}}{Software Engineer II}{Medallia}{Buenos Aires}{Argentina}{}
-%\subsection{Vocational}
-\cventry{\footnotesize{Febrero 2019--Febrero 2020}}{Ayudante de 2da de Algoritmos y Estructuras de Datos I}{Departamento de Computación, Facultad de Ciencias Exactas y Naturales, UBA}{Buenos Aires}{Argentina}{}%
-\cventry{\footnotesize Febrero 2018--Febrero 2019}{Profesor Particular de Programación}{}{Buenos Aires}{Argentina}{}%
-\cventry{\footnotesize Marzo 2015-- Marzo 2017}{Ingeniero de Software}{Mercadolibre}{Buenos Aires}{Argentina}{
-%Detailed achievements:%
-%\begin{itemize}%
-%\item Achievement 1;
-%\item Achievement 2, with sub-achievements:
-%  \begin{itemize}%
-%  \item Sub-achievement (a);
-%  \item Sub-achievement (b), with sub-sub-achievements (don't do this!);
-%    \begin{itemize}
-%    \item Sub-sub-achievement i;
-%    \item Sub-sub-achievement ii;
-%    \item Sub-sub-achievement iii;
-%    \end{itemize}
-%  \item Sub-achievement (c);
-%  \end{itemize}
-%\item Achievement 3.
-%\end{itemize}
-}
+\cventry{\footnotesize{Marzo 2015 -- Marzo 2017}}{Ingeniero de Software}{Mercadolibre}{Buenos Aires}{Argentina}{}
 %\cventry{year--year}{Job title}{Employer}{City}{}{Description line 1\newline{}Description line 2}
 %\subsection{Miscellaneous}
 %\cventry{year--year}{Job title}{Employer}{City}{}{Description}
 
 
-\section{Educación}
-\cventry{2023--Actualidad}{Doctorado en Ciencias de la Computación}{Universidad de Buenos Aires}{Buenos Aires}{Argentina}{
-  Tema: Parámetros de Grafos y Algoritmos Parametrizados. 
-  }
-\cventry{2015--2022}{Licenciado en Ciencias de la Computación}{Universidad de Buenos Aires}{Buenos Aires}{Argentina}{
-  Nota promedio de 8.9/10.
-  Mi tesis de licenciatura fue sobre un algoritmo para computar la thinness de un grafo árbol en tiempo \(\mathcal{O}(n\cdot\log(n))\); un resultado nuevo en el área. Este desarrollo fue presentado en el International Symposium on Combinatorial Optimization (ISCO) de 2022.
-}  % arguments 3 to 6 can be left empty
-\cventry{2010--2014}{Bachiller con orientación Tecnológica}{Secundaria ORT}{Buenos Aires}{Argentina}{}
 
 \section{Publicaciones}
-\cvlistitem{Bonomo-Braberman, F., Brandwein, E., Oliveira, F. S., Sampaio, M. S., Sansone, A., Szwarcfiter, J. L. (2024). \emph{Thinness and its variations on some graph families and coloring graphs of bounded thinness}. RAIRO-Operations Research, 58(2), 1681-1702.}
-\cvlistitem{Bonomo-Braberman, F., Brandwein, E., Gonzalez, C.L., Sansone, A. (2022). \emph{On the Thinness of Trees.} In: Ljubić, I., Barahona, F., Dey, S.S., Mahjoub, A.R. (eds) Combinatorial Optimization. ISCO 2022. Lecture Notes in Computer Science, vol 13526. Springer, Cham. https://doi.org/10.1007/978-3-031-18530-4\_14}
+\subsection{Preprints}
+\cvlistitem{\emph{Computing parameters that generalize interval graphs using restricted modular partitions}. Flavia Bonomo-Braberman, Eric Brandwein, Ignasi Sau. Enviado para revisión.}
 
-%\section{Master thesis}
-%\cvitem{title}{\emph{Title}}
-%\cvitem{supervisors}{Supervisors}
-%\cvitem{description}{Short thesis abstract}
+\subsection{En conferencias}
+\cvlistitem{\emph{Kernelization dichotomies for hitting minors under structural parameterizations}. Marin Bougeret, Eric Brandwein, Ignasi Sau (2026). 43rd International Symposium on Theoretical Aspects of Computer Science (STACS 2026), 17:1--17:19. Leibniz International Proceedings in Informatics (LIPIcs). \url{https://doi.org/10.4230/LIPIcs.STACS.2026.17}.}
+
+\cvlistitem{\emph{Thinness 2 condicionada a órdenes de co-bipartición}. Ayelén Dinkel, Flavia Bonomo-Braberman, Eric Brandwein (2025). JAIIO, Jornadas Argentinas De Informática, 11(14), 98-111. \url{https://revistas.unlp.edu.ar/JAIIO/article/view/19450}.}
+\cvlistitem{\emph{On the Thinness of Trees}. Flavia Bonomo-Braberman, Eric Brandwein, Carolina Lucía Gonzalez, Agustín Sansone (2022). Combinatorial Optimization. ISCO 2022. Lecture Notes in Computer Science, vol 13526. Springer, Cham. \url{https://doi.org/10.1007/978-3-031-18530-4\_14}.}
+
+\subsection{En revistas}
+\cvlistitem{\emph{On the thinness of trees}. Flavia Bonomo-Braberman, Eric Brandwein, Carolina Lucía Gonzalez, Agustín Sansone (2025), Discrete Applied Mathematics, Volumen 365, Páginas 39-60, ISSN 0166-218X, \url{https://doi.org/10.1016/j.dam.2024.12.027}.}
+\cvlistitem{\emph{Thinness and its variations on some graph families and coloring graphs of bounded thinness}. Flavia Bonomo-Braberman, Eric Brandwein, Fabiano de S. Oliveira, Moysés S. Sampaio Jr., Agustín Sansone, Jayme Luiz Szwarcfiter (2024). RAIRO-Operations Research, 58(2), 1681-1702. \url{https://doi.org/10.1051/ro/2024033}.}
+
+\section{Charlas}
+\cvlistitem{\emph{Kernelización}. 8ª Día de la Investigación en Ciencias de la Computación, Instituto de Ciencias de la Computación, Universidad de Buenos Aires, Buenos Aires, Argentina, Agosto 2026.}
+\cvlistitem{\emph{Dicotomías de kernelización para minor hitting}. I Encuentro Invernal de Grafos, Departamento de Matemáticas, Universidad Nacional de San Luis, San Luis, Argentina, Julio 2026. Trabajo en conjunto con Marin Bougeret e Ignasi Sau.}
+\cvlistitem{\emph{Kernelization dichotomies for hitting minors under structural parameterizations}. Séminaire ALGCo, LIRMM, Montpellier, France, Octubre 2025. Trabajo en conjunto con Marin Bougeret e Ignasi Sau.}
+\cvlistitem{\emph{Parameterized algorithms for thinness via the cluster module number}. 11th Latin American Workshop on Cliques in Graphs, Ceará, Brazil, Octubre 2024. Trabajo en conjunto con Flavia Bonomo e Ignasi Sau.}
+\cvlistitem{\emph{Parameterized algorithms for thinness via the cluster module number}. Workshop SINFIN, Ciudad Autónoma de Buenos Aires, Argentina, Marzo 2024. Trabajo en conjunto con Flavia Bonomo e Ignasi Sau.}
+
+\section{Tesistas}
+\subsection{Para la licenciatura en Ciencias de la Computación, Departamento de Computación, Universidad de Buenos Aires, Argentina}
+\cvitem{}{Mauricio Romero Laino, Ignacio Lucas Rodriguez, Ezequiel Maidanik, Bárbara Rivero, Manuela Martínez (co-director).}
+
+\subsection{Para la licenciatura en Ciencias de Datos, Departamento de Computación, Universidad de Buenos Aires, Argentina}
+\cvitem{}{Germán Rud, Ayelén Dinkel (co-director, defendida Diciembre 2024).}
+
+\subsection{Para la licenciatura en Matemática, Departamento de Computación, Universidad de Buenos Aires, Argentina}
+\cvitem{}{Manuel Robert (co-director, defendida Noviembre 2025).}
+
+
+\section{Revisión de artículos}
+\cvitem{}{Revisor para LAGOS 2025, ISAAC 2024, e IPEC 2024.} 
+
+\section{Comités}
+\cvitem{}{Parte del comité organizador para LAGOS 2025.}
+
+\section{Becas}
+\cvlistitem{\textbf{Visita de investigación}, cubriendo estadía y comidas. LIRMM, Montpellier, France, Octubre 2025.}
+\cvlistitem{\textbf{+Viajes 2024}, cubriendo gastos de viaje a Ceará, Brasil. Universidad de Buenos Aires, Argentina, 2024.}
+\cvlistitem{\textbf{Visita de investigación}, cubriendo estadía y comidas. LIRMM, Montpellier, France, Agosto 2024.}
+\cvlistitem{\textbf{Beca de doctorado}. CONICET, Argentina, 2024 - 2029, PIP 11220200100084CO.}
+\cvlistitem{\textbf{Beca de doctorado}. UBACyT, Argentina, 2023 - 2024, 20220230100009BA.}
 
 \section{Idiomas}
-\cvitemwithcomment{Español}{Nativo}{Nacido y actualmente viviendo en Argentina}
-\cvitemwithcomment{Inglés}{Fluido}{Aprobé el CAE de la Universidad de Cambridge con una B}
-\cvitemwithcomment{Italiano}{Buen manejo}{Mis abuelos son italianos}
-\cvitemwithcomment{Francés}{Básico}{Curso de 6 meses con un profesor francés nativo, y dos semanas en Francia}
+\cvitemwithcomment{Español}{Nativo}{}
+\cvitemwithcomment{Inglés}{Fluido}{CAE, Universidad de Cambridge}
+\cvitemwithcomment{Italiano}{Intermedio}{Escuela primaria trilingüe y familia italiana}
+\cvitemwithcomment{Francés}{Básico}{Curso de 6 meses con un profesor nativo de francés}
 
-% \section{Tecnologías}
-% \cvitem{Lenguajes}{Proficiente en Java, C++ y Python. Otros lenguajes incluyen Smalltalk, HTML, CSS, C, Javascript, SQL, Kotlin, Haskell y C\#.}
-% \cvitem{Android Frameworks}{Mockito, Robolectric, y otros.}
-% \cvitem{Otros Frameworks}{Django, Node.js, JUnit, Pug.js, express.js, Groovy/Grails.}
-% \cvitem{Otros}{Git, Bash, Linux.}
-
-\section{Certificados}
-\cvlistitem{\
-  Un total de once medallas y menciones en las Olimpíadas Argentinas de Informática (OIA) y Matemáticas (OMA),\
-  incluyendo Medalla de Oro nacional.\
-}
-\cvlistitem{Cambridge Certificate of Advanced English (CAE).}
+\section{Otros certificados}
+\cvlistitem{Integrante del equipo que obtuvo el tercer puesto en los Torneos Argentinos de Programación (TAP) de 2019 y 2020.}
+\cvlistitem{Un total de 11 medallas y reconocimientos en las Olimpíadas Argentinas de Informática (OIA) y Matemática (OMA), incluyendo Medalla de Oro nacional a los 14 años.}
 %\cvlistitem{Item 3. This item is particularly long and therefore normally spans over several lines. Did you notice the indentation when the line wraps?}
 
-% \section{Proyectos}
-% \cvitem{Después de la Secundaria:}{
-%   Contribución y creación de Proyectos Open Source hechos en varios frameworks, incluyendo Android y Node.js,\
-%   visible desde \textcolor{blue}{\href{http://github.com/ericbrandwein}{mi página de GitHub}}.\
-%   Mis aportes más recientes fueron a \textcolor{blue}{\href{https://github.com/Cuis-Smalltalk/Cuis-Smalltalk-Dev}{Cuis}},\
-%   un lenguaje basado en Smalltalk hecho en Argentina, y a
-%   \textcolor{blue}{\href{https://github.com/nsanmartin/qed/}{QED}},
-%   una página de resoluciones de ejercicios de la facultad.}{}{}{}
-% \cvitem{Durante la Secundaria:}{
-%     \begin{itemize}
-%       \item Aplicación en Android para convertir videos a GIFs, y subirlos a redes sociales;
-%       \item Juego de carrera de obstáculos hecho en Unity 3D;
-%       \item Juego similar al Tetris hecho en C\# XNA.
-%     \end{itemize}}
+% \section{Other Projects}
+% \cvitem{}{
+% Contributed to many open source projects, including 
+% \textcolor{blue}{\href{https://github.com/django/django}{the Django framework}} and 
+% \textcolor{blue}{\href{https://github.com/pharo-project/pharo}{Pharo}}. These can be seen on \textcolor{blue}{\href{http://github.com/ericbrandwein}{my GitHub page}}.
+% My most recent contributions were made to \textcolor{blue}{\href{https://github.com/Cuis-Smalltalk/Cuis-Smalltalk-Dev}{Cuis}}, a Smalltalk distribution; and \textcolor{blue}{\href{https://github.com/nsanmartin/qed/}{QED}}, a page where university students can upload and solve exercises. Also, avid competitor on \textcolor{blue}{\href{http://codeforces.com/profile/Periquito}{Codeforces}}.
+% }{}{}{}
 
+% %\cvlistdoubleitem{Item 2}{Item 5\cite{book1}}
+% %\cvlistdoubleitem{Item 3}{Item 6. Like item 3 in the single column list before, this item is particularly long to wrap over several lines.}
 
-%\cvlistdoubleitem{Item 2}{Item 5\cite{book1}}
-%\cvlistdoubleitem{Item 3}{Item 6. Like item 3 in the single column list before, this item is particularly long to wrap over several lines.}
-
-\section{Otros intereses}
-\cvitem{}{Teatro Musical, Esquiar, Competencias de Programación, y Juegos de Mesa.}
+% \section{Other Interests}
+% \cvitem{}{Musical Theater, Bouldering, Competitive Programming, and Tabletop Gaming.}
 %\cvitem{hobby 2}{Description}
 %\cvitem{hobby 3}{Description}
 
@@ -186,7 +181,7 @@
 %-----       letter       ---------------------------------------------------------
 % recipient data
 %\recipient{Company Recruitment team}{Company, Inc.\\123 somestreet\\some city}
-%\date{January 01, 1984}
+%\date{Enero 01, 1984}
 %\opening{Dear Sir or Madam,}
 %\closing{Yours faithfully,}
 %\enclosure[Attached]{curriculum vit\ae{}}          % use an optional argument to use a string other than "Enclosure", or redefine \enclname

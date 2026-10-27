@@ -1,4 +1,4 @@
-all: espanol ingles scientist
+all: espanol ingles scientist resumido
 
 espanol:
 	pdflatex curriculum-español.tex
@@ -8,3 +8,6 @@ ingles:
 
 scientist:
 	pdflatex curriculum-scientist.tex
+
+resumido:
+	pdflatex curriculum-resumido.tex

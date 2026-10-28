@@ -1,17 +1,22 @@
 %% Versión resumida (una carilla) del curriculum en español.
-%% Basado en curriculum-español.tex.
+%% Basado en curriculum-español.tex. Compilar con xelatex.
 
-\documentclass[10pt,a4paper,sans]{moderncv}
+\documentclass[11pt,a4paper,sans]{moderncv}
 
 \moderncvstyle{casual}
 \moderncvcolor{blue}
 \nopagenumbers{}
 
-\usepackage[utf8]{inputenc}
+% Arial (o Liberation Sans, que tiene las mismas métricas, si Arial no está instalada)
+\usepackage{fontspec}
+\IfFontExistsTF{Arial}{\setsansfont{Arial}}{\setsansfont{Liberation Sans}}
+\renewcommand{\familydefault}{\sfdefault}
 
 % márgenes chicos para que entre en una carilla
-\usepackage[top=1.2cm,bottom=1.2cm,left=1.5cm,right=1.5cm]{geometry}
-\setlength{\hintscolumnwidth}{3cm}
+\usepackage[top=1.2cm,bottom=1.2cm,left=1.3cm,right=1.3cm]{geometry}
+\setlength{\hintscolumnwidth}{2.3cm}
+\renewcommand*{\namefont}{\fontsize{30}{32}\mdseries\upshape}
+\frenchspacing
 
 % títulos de sección más chicos y con menos espacio
 \renewcommand*{\sectionfont}{\large\mdseries\upshape}
@@ -29,9 +34,9 @@
 \makeatother
 
 % entrada compacta de una línea: \cvcompact{fechas}{cargo}{lugar}
-\newcommand{\cvcompact}[3]{\cvitem[0.2ex]{\footnotesize #1}{\small\textbf{#2}, #3}}
+\newcommand{\cvcompact}[3]{\cvitem[0.2ex]{#1}{\textbf{#2}, #3}}
 % ítem de lista compacto
-\newcommand{\cvsmallitem}[1]{\cvlistitem[0.2ex]{\small #1}}
+\newcommand{\cvcompactitem}[1]{\cvlistitem[0.2ex]{#1}}
 
 \name{Eric}{Brandwein}
 \phone[mobile]{+54~(911)~6120~4615}
@@ -43,46 +48,41 @@
 \vspace{-4ex}
 
 \section{Estudios}
-\cvcompact{2023 -- 2027 (est.)}{Doctorado en Ciencias de la Computación}{Universidad de Buenos Aires. Directores: Flavia Bonomo e Ignasi Sau. Tema: Kernelización en grafos.}
+\cvcompact{2023 -- 2027}{Doctorado en Ciencias de la Computación}{Universidad de Buenos Aires. Directores: Flavia Bonomo e Ignasi Sau. Tema: Kernelización en grafos. Finalización estimada: 2027.}
 \cvcompact{2015 -- 2022}{Licenciatura en Ciencias de la Computación}{Universidad de Buenos Aires.}
 
 \section{Docencia}
-\cvcompact{03/2026 -- 06/2026}{Profesor Titular}{Matemática Discreta, Ing. en Inteligencia Artificial, Universidad del CEMA.}
-\cvcompact{10/2023 -- 08/2026}{Ayudante de 1ra / JTP / Cargo Equiparado a JTP}{Algoritmos y Estructuras de Datos III, DC, FCEyN, UBA.}
-\cvcompact{08/2024 -- 02/2025}{Profesor Asistente}{Algoritmos y Estructura de Datos, Depto.\ de Ingeniería, Universidad de San Andrés.}
-\cvcompact{02/2019 -- 02/2020}{Ayudante de 2da}{Algoritmos y Estructuras de Datos I, DC, FCEyN, UBA.}
+\cvcompact{2026}{Profesor Titular}{Matemática Discreta, Ing. en Inteligencia Artificial, Universidad del CEMA.}
+\cvcompact{2023 -- 2026}{Ayudante de 1ra / JTP / Cargo Equiparado a JTP}{Algoritmos y Estructuras de Datos III, FCEyN, UBA.}
+\cvcompact{2024 -- 2025}{Profesor Asistente}{Algoritmos y Estructura de Datos, Universidad de San Andrés.}
+\cvcompact{2019 -- 2020}{Ayudante de 2da}{Algoritmos y Estructuras de Datos I, FCEyN, UBA.}
 
 \section{Publicaciones}
-\cvsmallitem{\emph{Kernelization dichotomies for hitting minors under structural parameterizations}. M.~Bougeret, E.~Brandwein, I.~Sau. STACS 2026, LIPIcs, 17:1--17:19.}
-\cvsmallitem{\emph{On the thinness of trees}. F.~Bonomo-Braberman, E.~Brandwein, C.~L.~Gonzalez, A.~Sansone. Discrete Applied Mathematics 365:39--60, 2025. Versión preliminar en ISCO 2022, LNCS 13526.}
-\cvsmallitem{\emph{Thinness 2 condicionada a órdenes de co-bipartición}. A.~Dinkel, F.~Bonomo-Braberman, E.~Brandwein. JAIIO 11(14):98--111, 2025.}
-\cvsmallitem{\emph{Thinness and its variations on some graph families and coloring graphs of bounded thinness}. F.~Bonomo-Braberman, E.~Brandwein, F.~de~S.~Oliveira, M.~S.~Sampaio~Jr., A.~Sansone, J.~L.~Szwarcfiter. RAIRO-Operations Research 58(2):1681--1702, 2024.}
-\cvsmallitem{\emph{Computing parameters that generalize interval graphs using restricted modular partitions}. F.~Bonomo-Braberman, E.~Brandwein, I.~Sau. Enviado para revisión.}
+\cvcompactitem{\emph{Kernelization dichotomies for hitting minors under structural parameterizations}. M.~Bougeret, E.~Brandwein, I.~Sau. STACS 2026, LIPIcs, 17:1--17:19.}
+\cvcompactitem{\emph{On the thinness of trees}. F.~Bonomo-Braberman, E.~Brandwein, C.~L.~Gonzalez, A.~Sansone. Discrete Applied Mathematics 365:39--60, 2025. Versión preliminar en ISCO 2022.}
+\cvcompactitem{\emph{Thinness 2 condicionada a órdenes de co-bipartición}. A.~Dinkel, F.~Bonomo-Braberman, E.~Brandwein. JAIIO 11(14):98--111, 2025.}
+\cvcompactitem{\emph{Thinness and its variations on some graph families and coloring graphs of bounded thinness}. F.~Bonomo-Braberman, E.~Brandwein, F.~de~S.~Oliveira, M.~S.~Sampaio~Jr., A.~Sansone, J.~L.~Szwarcfiter. RAIRO-Operations Research 58(2):1681--1702, 2024.}
+\cvcompactitem{\emph{Computing parameters that generalize interval graphs using restricted modular partitions}. F.~Bonomo-Braberman, E.~Brandwein, I.~Sau. Enviado para revisión.}
 
 \section{Charlas}
-\cvsmallitem{\emph{Kernelización}. 8º Día de la Investigación en Ciencias de la Computación, ICC, UBA, Ago. 2026.}
-\cvsmallitem{\emph{Dicotomías de kernelización para minor hitting}. I Encuentro Invernal de Grafos, UNSL, San Luis, Jul. 2026.}
-\cvsmallitem{\emph{Kernelization dichotomies for hitting minors under structural parameterizations}. Séminaire ALGCo, LIRMM, Montpellier, Francia, Oct. 2025.}
-\cvsmallitem{\emph{Parameterized algorithms for thinness via the cluster module number}. LAWCG 2024, Ceará, Brasil, Oct. 2024; Workshop SINFIN, Buenos Aires, Mar. 2024.}
+\cvcompactitem{\emph{Kernelización}. 8º Día de la Investigación en Cs.\ de la Computación, ICC, UBA, Ago. 2026.}
+\cvcompactitem{\emph{Dicotomías de kernelización para minor hitting}. I Encuentro Invernal de Grafos, UNSL, San Luis, Jul. 2026.}
+\cvcompactitem{\emph{Kernelization dichotomies for hitting minors under structural parameterizations}. Séminaire ALGCo, LIRMM, Montpellier, Francia, Oct. 2025.}
+\cvcompactitem{\emph{Parameterized algorithms for thinness via the cluster module number}. LAWCG 2024, Ceará, Brasil, Oct. 2024; Workshop SINFIN, Buenos Aires, Mar. 2024.}
 
-\section{Tesistas}
-\cvitem[0.2ex]{\footnotesize Lic.\ en Computación}{\small Mauricio Romero Laino, Ignacio Lucas Rodriguez, Ezequiel Maidanik, Bárbara Rivero, Manuela Martínez (co-dir.).}
-\cvitem[0.2ex]{\footnotesize Lic.\ en Datos}{\small Germán Rud, Ayelén Dinkel (co-dir., defendida Dic.\ 2024).}
-\cvitem[0.2ex]{\footnotesize Lic.\ en Matemática}{\small Manuel Robert (co-dir., defendida Nov.\ 2025).}
+\section{Tesistas de licenciatura}
+\cvitem[0.2ex]{Computación}{Mauricio Romero Laino, Ignacio Lucas Rodriguez, Ezequiel Maidanik, Bárbara Rivero, Manuela Martínez (co-dir.).}
+\cvitem[0.2ex]{Datos}{Germán Rud, Ayelén Dinkel (co-dir., defendida Dic.\ 2024).}
+\cvitem[0.2ex]{Matemática}{Manuel Robert (co-dir., defendida Nov.\ 2025).}
 
 \section{Becas}
-\cvsmallitem{\textbf{Beca de doctorado} CONICET (2024 -- 2029) y UBACyT (2023 -- 2024).}
-\cvsmallitem{\textbf{Visitas de investigación} al LIRMM, Montpellier, Francia (Ago. 2024 y Oct. 2025). \textbf{+Viajes 2024}, UBA.}
+\cvcompactitem{\textbf{Beca de doctorado} CONICET (2024 -- 2029) y UBACyT (2023 -- 2024).}
+\cvcompactitem{\textbf{Visitas de investigación} al LIRMM, Montpellier (2024 y 2025). Beca \textbf{+Viajes 2024}, UBA.}
 
-\section{Otras actividades}
-\cvitem[0.2ex]{\footnotesize Revisión}{\small Revisor para LAGOS 2025, ISAAC 2024 e IPEC 2024.}
-\cvitem[0.2ex]{\footnotesize Comités}{\small Comité organizador de LAGOS 2025.}
-
-\section{Experiencia en la industria}
-\cvitem[0.2ex]{\footnotesize 2015 -- 2022}{\small Ingeniero de Software en Wildlife Studios (2022), Mulesoft (2021), Medallia (2021) y Mercadolibre (2015--2017).}
-
-\section{Idiomas y otros}
-\cvitem[0.2ex]{\footnotesize Idiomas}{\small Español (nativo), inglés (fluido, CAE Cambridge), italiano (intermedio), francés (básico).}
-\cvitem[0.2ex]{\footnotesize Competencias}{\small Tercer puesto en el TAP 2019 y 2020. 11 medallas y reconocimientos en OIA y OMA, incluyendo medalla de oro nacional.}
+\section{Otros}
+\cvitem[0.2ex]{Industria}{Ingeniero de Software en Wildlife Studios (2022), Mulesoft (2021), Medallia (2021) y Mercadolibre (2015--2017).}
+\cvitem[0.2ex]{Revisión}{Revisor para LAGOS 2025, ISAAC 2024 e IPEC 2024. Comité organizador de LAGOS 2025.}
+\cvitem[0.2ex]{Idiomas}{Español (nativo), inglés (fluido, CAE Cambridge), italiano (intermedio), francés (básico).}
+\cvitem[0.2ex]{Olimpíadas}{Tercer puesto en el TAP 2019 y 2020. 11 medallas y reconocimientos en OIA y OMA, incluyendo medalla de oro nacional.}
 
 \end{document}

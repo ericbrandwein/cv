@@ -10,4 +10,4 @@ scientist:
 	pdflatex curriculum-scientist.tex
 
 resumido:
-	pdflatex curriculum-resumido.tex
+	xelatex curriculum-resumido.tex
